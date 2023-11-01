@@ -19,13 +19,15 @@ int main() {
 	int amountOfDivisors;
 	int amountOfPrimeNumbers;
 	vector<int> primeNumbers;
+	int startFrom;
 	// user settings
 	cout << "Input range of numbers where I'll search for prime ones: " << endl;
 		cin >> dividend;
 	cout << "Disable output? 1 for yes, 0 for no" << endl;
 		cin >> disableOutput;
 	// search for prime numbers
-		for (int i = 1; i < dividend; i++) {
+		for (int i = 1; i < dividend; i += 2) {
+			if (i - 1 == 2) amountOfPrimeNumbers++;
 			amountOfDivisors = divisors(i, disableOutput);
 			if (amountOfDivisors == 2) {
 				primeNumbers.push_back(i);
