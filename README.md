@@ -13,3 +13,7 @@ Dla każdej liczby słowo TAK, jeśli liczba ta jest pierwsza, słowo: NIE, w pr
 This program calculates amount of prime numbers in range inputted by user.
 -=-=-=-=-=-=-=-=-=-=-
 Answer for question is: 9592
+-=-=-=-=-=-=-=-=-=-=-
+Results now show faster, for 100000 numbers with disabled output executiom time is:
+16.00 seconds with incrementing by two
+23.00 seconds with incrementing by one
